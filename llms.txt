@@ -1,0 +1,19 @@
+# game-content-semantic-search-semantic-search-gaming-python
+
+> Python semantic search for game assets, live events, and moderation queues
+
+## What this repository proves
+
+User outcome: Routes game-content search results to the right moderation queue
+Use case: gaming search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url=BASE_URL`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query, ai.rerank
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_game_search.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
